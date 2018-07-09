@@ -1,3 +1,7 @@
-<p>
-  parent works!
-</p>
+<div class="well">
+    <h2>Parent Component</h2>
+    <p>{{message}}</p>
+    <div class="col-12 bg-danger">
+        <app-child [message]="message"></app-child>
+    </div>
+</div>

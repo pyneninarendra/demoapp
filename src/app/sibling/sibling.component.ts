@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sibling.component.css']
 })
 export class SiblingComponent implements OnInit {
-
+private message: string;
   constructor() { }
 
   ngOnInit() {
+    this.message = 'Siblig Message';
   }
 
 }

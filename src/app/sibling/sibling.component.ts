@@ -10,7 +10,7 @@ private message: string;
   constructor() { }
 
   ngOnInit() {
-    this.message = 'Siblig Message';
+    this.message = 'Sibling Message';
   }
 
 }

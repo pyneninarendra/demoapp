@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -7,7 +7,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
   private message: string;
-  @Output() emitMsg= new EventEmitter<string>()
+
   constructor() { }
 
   ngOnInit() {
@@ -15,7 +15,6 @@ export class ChildComponent implements OnInit {
   }
 
   sendMsg(){
-    this.emitMsg.emit(this.message);
   }
 
 }
